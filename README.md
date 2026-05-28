@@ -1,5 +1,8 @@
 # MDTMultiAgent
 
+## MDT Pathway Generation Structure
+
+```text
 MDT_Pathway_Generation/
 │
 ├── Input
@@ -85,31 +88,42 @@ MDT_Pathway_Generation/
 │   │   ├── Cardiology
 │   │   │   ├── CardiologistAgent
 │   │   │   └── CardiologyRegistrarAgent
+│   │   │
 │   │   ├── Respiratory
 │   │   │   ├── RespiratoryConsultantAgent
 │   │   │   └── RespiratoryRegistrarAgent
+│   │   │
 │   │   ├── Neurology
 │   │   │   └── NeurologistAgent
+│   │   │
 │   │   ├── Gastroenterology
 │   │   │   └── GastroenterologistAgent
+│   │   │
 │   │   ├── Nephrology
 │   │   │   └── NephrologistAgent
+│   │   │
 │   │   ├── Oncology
 │   │   │   └── OncologistAgent
+│   │   │
 │   │   ├── Orthopaedics
 │   │   │   └── OrthopaedicSurgeonAgent
+│   │   │
 │   │   ├── GeneralSurgery
 │   │   │   └── GeneralSurgeonAgent
+│   │   │
 │   │   └── InfectiousDisease
 │   │       └── InfectiousDiseaseAgent
 │   │
 │   ├── Diagnostics_Agents
 │   │   ├── Laboratory
 │   │   │   └── LaboratoryAgent
+│   │   │
 │   │   ├── Radiology
 │   │   │   └── RadiologyAgent
+│   │   │
 │   │   ├── Pathology
 │   │   │   └── PathologyAgent
+│   │   │
 │   │   └── Microbiology
 │   │       └── MicrobiologyAgent
 │   │
@@ -179,3 +193,76 @@ MDT_Pathway_Generation/
 │
 └── Final_Output
     └── PatientPathwayTimeline
+```
+
+
+
+
+## Service to Agent Mapping
+
+```text
+Service_to_Agent_Mapping/
+│
+├── SpecialtyDepartment
+│   ├── Cardiology
+│   │   └── CardiologistAgent
+│   ├── Respiratory
+│   │   └── RespiratoryConsultantAgent
+│   ├── Neurology
+│   │   └── NeurologistAgent
+│   ├── GeneralSurgery
+│   │   └── GeneralSurgeonAgent
+│   └── Orthopaedics
+│       └── OrthopaedicSurgeonAgent
+│
+├── Diagnostics
+│   ├── Laboratory
+│   │   └── LaboratoryAgent
+│   ├── Radiology
+│   │   └── RadiologyAgent
+│   ├── Pathology
+│   │   └── PathologyAgent
+│   └── Microbiology
+│       └── MicrobiologyAgent
+│
+├── Surgery_Theatre
+│   ├── TheatreCoordinatorAgent
+│   ├── SurgeonAgent
+│   ├── AnaesthetistAgent
+│   └── PerioperativeCareAgent
+│
+├── Ward_or_ICU
+│   ├── WardDoctorAgent
+│   ├── ICUDoctorAgent
+│   ├── BedManagerAgent
+│   └── CriticalCareAgent
+│
+├── Nursing
+│   ├── NursingAgent
+│   ├── SpecialistNurseAgent
+│   └── CriticalCareNurseAgent
+│
+├── Rehabilitation
+│   ├── PhysiotherapyAgent
+│   ├── OccupationalTherapyAgent
+│   ├── SpeechTherapyAgent
+│   └── DietitianAgent
+│
+├── Pharmacy
+│   ├── PharmacistAgent
+│   └── AntibioticStewardshipAgent
+│
+├── DischargePlanning
+│   ├── DischargePlanningAgent
+│   ├── SocialCareAgent
+│   ├── CommunityCareAgent
+│   └── PalliativeCareAgent
+│
+└── Cross_Cutting
+    ├── OrchestratorAgent
+    ├── MDTCoordinatorAgent
+    ├── ResourceManagerAgent
+    ├── PatientVoiceAgent
+    ├── SafetyCriticAgent
+    └── TimelineGeneratorAgent
+```
